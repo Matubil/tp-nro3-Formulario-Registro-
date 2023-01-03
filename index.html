@@ -19,25 +19,25 @@
         <section class="section">
             <form id="register" class="register">
                 <label class="register__label" for="name">Nombre Completo</label>
-                <input class="register__input-name" type="text" name="name" id="name">
+                <input class="register__input-name" type="text" name="name" id="name" required>
     
                 <label class="register__label" for="email">Email</label>
-                <input class="register__input-mail"  type="email" name="mail" id="email" placeholder="example@email.com">
+                <input class="register__input-mail"  type="email" name="mail" pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" id="email" placeholder="example@email.com" required>
     
                 <label class="register__label" for="password1">Contraseña</label>
-                <input class="register__input-password" type="password" name="password1" id="password1">
+                <input class="register__input-password" type="password" name="password1" id="password1" required>
     
                 <label class="register__label" for="password2">Repetir Contraseña</label>
-                <input class="register__input-password" type="password" name="password2" id="password2">
+                <input class="register__input-password" type="password" name="password2" id="password2" required>
     
                 <label class="register__label" for="age">Edad</label>
-                <input class="register__input-age" type="number" name="age" id="age" min="12" max="110">
+                <input class="register__input-age" type="number" name="age" id="age" min="12" max="110" required>
     
                 <label class="register__label" for="born-date">Fecha de Nacimiento</label>
-                <input class="register__input-age" type="date" name="age" id="born-date">
+                <input class="register__input-age" type="date" name="age" id="born-date" required>
     
                 <label class="register__label" for="born-country">Pais de Nacimiento</label>
-                <select id="born-country" class="register__country">
+                <select id="born-country" class="register__country" required>
                     <option value="AF">Afghanistan</option>
                         <option value="AX">Åland Islands</option>
                         <option value="AL">Albania</option>
@@ -290,22 +290,23 @@
                 </select>
     
                 <label class="register__label" for="">Sexo</label>
+
                 <div class="sex-container">
-                    <input type="radio" class="sex-container__female" name="female" id="female">
+                    <input type="radio" class="sex-container__female" name="sex" id="female" required>
                     <label class="sex-container__label" for="female">Femenino</label>
     
-                    <input type="radio" class="sex-container__male" name="male" id="male">
+                    <input type="radio" class="sex-container__male" name="sex" id="male">
                     <label class="sex-container__label" for="male">Masculino</label>
                     
-                    <input type="radio" class="sex-container__other" name="other" id="other">
+                    <input type="radio" class="sex-container__other" name="sex" id="other">
                     <label class="sex-container__label" for="other">Otro</label>
                 </div>
     
                 <div class="therms-container">
-                    <input type="checkbox" name="female" id="therms">
+                    <input type="checkbox" name="female" id="therms" required>
                     <label class="therms-container__label" for="therms">Acepto los términos y condiciones</label>
                 </div>
-                <input class="register__button" type="button" value="Enviar">
+                <input class="register__button" value="Enviar" type="submit">
             </form>
         </section>
     </main>
