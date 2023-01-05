@@ -45,7 +45,7 @@ body{
 
 /* FORMULARIO -*****************************************/
 
-form{
+.form-container{
     margin-top: 1.5rem;
     padding: 1.5rem;
     background-color: #222222;
