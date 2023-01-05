@@ -17,40 +17,40 @@
         <h1 class="title">REGISTRO DE USUARIO</h1>
 
         <section class="section">
-            <form id="register" class="register">
+            <form id="register" class="form-container">
                 
-                <div class="name-container container">
+                <div class="name-container form-container-item">
                     <label class="name-container__label" for="name">Nombre Completo</label>
-                    <input class="name-container__input input" type="text" name="name" id="name" placeholder="Nombre y Apellido" required>
+                    <input class="name-container__input input-form-register" type="text" name="name" id="name" placeholder="Nombre y Apellido" required>
                 </div>
     
-                <div class="mail-container container">
+                <div class="mail-container form-container-item">
                     <label class="mail-container__label" for="email">Email</label>
-                    <input class="mail-container__input input"  type="email" name="mail" minlength="8" maxlength="45"
+                    <input class="mail-container__input input-form-register"  type="email" name="mail" minlength="8" maxlength="45"
                     pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?" id="email" placeholder="example@email.com" required>
                 </div>
     
-                <div class="password-container container">
+                <div class="password-container form-container-item">
                     <label class="password-container__label" for="password1">Contraseña</label>
-                    <input class="password-container__input input" type="password" name="password1" id="password1" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                    <input class="password-container__input input-form-register" type="password" name="password1" id="password1" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                 </div>
     
-                <div class="reply-password-container container">
+                <div class="reply-password-container form-container-item">
                     <label class="reply-password-container__label" for="password2">Repetir Contraseña</label>
-                    <input class="reply-password-container__input input" type="password" name="password2" id="password2" required>
+                    <input class="reply-password-container__input input-form-register" type="password" name="password2" id="password2" required>
                 </div>
     
-                <div class="age-container container">
+                <div class="age-container form-container-item">
                     <label class="age-container__label" for="age">Edad</label>
-                    <input class="age-container__input input" type="number" name="age" id="age" min="12" max="110" step="5" required>
+                    <input class="age-container__input input-form-register" type="number" name="age" id="age" min="12" max="110" step="5" required>
                 </div>
     
-                <div class="born-container container">
+                <div class="born-container form-container-item">
                     <label class="born-container__label" for="born-date">Fecha de Nacimiento</label>
-                    <input class="born-container__input input" type="date" name="age" id="born-date" required>
+                    <input class="born-container__input input-form-register" type="date" name="age" id="born-date" required>
                 </div>
     
-                <div class="born-country-container container">
+                <div class="born-country-container form-container-item">
                     <label class="born-country-container__label" for="born-country">Pais de Nacimiento</label>
                     <select id="born-country" class="born-country-container__country" required>
                         <option value="AF">Afghanistan</option>
@@ -305,9 +305,9 @@
                     </select>
                 </div>
     
-                <label class="container" for="">Sexo</label>
+                <label class="form-container-item" for="">Sexo</label>
                 <div class="sex-container container">
-                    <input type="radio" class="sex-container__item" name="sex" id="female" required>
+                    <input type="radio" class="sex-container__item " name="sex" id="female" required>
                     <label class="sex-container__label" for="female">Femenino</label>
                     
                     <input type="radio" class="sex-container__item" name="sex" id="male">
@@ -317,7 +317,7 @@
                     <label class="sex-container__label" for="other">Otro</label>
                 </div>
     
-                <div class="therms-container container">
+                <div class="therms-container form-container-item">
                     <input class="therms-container__input" type="checkbox" name="checkbox" id="therms" required>
                     <label class="therms-container__label" for="therms">Acepto los términos y condiciones</label>
                 </div>
